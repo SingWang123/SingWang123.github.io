@@ -1,0 +1,199 @@
+html{
+    font-family: "Noto Sans TC", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;
+    background-color: #F5F5F5;
+  }
+
+/*開電腦尺寸，關手機尺寸*/
+.section_desktop_1,
+.section_desktop_2{
+  display:block;
+}
+  
+.section_mobile_1,
+.section_mobile_2{
+  display:none;
+}
+
+/*上方標題*/
+body{
+  width:1024px;
+  margin:0 auto; 
+  background-color: #FFFFFF;
+  align-content: middle;
+}
+
+h1{
+  font-size: 40px;  
+  text-align: right;
+  margin: 0;
+  padding: 10px 10px 0 0;
+  text-shadow: 3px 3px 1px #F5F5F5;
+}
+
+.name{
+  font-size:16px;
+  text-align: right;
+  margin:0;
+  padding: 0 10px 10px 0;
+}
+
+/*下方內容區塊*/
+.section_desktop_1{
+  display: flex;
+  margin:0;
+  padding: 20px 0px 10px 10px;
+}
+
+.section_desktop_2{
+  display: flex;
+  margin:0;
+  padding: 20px 10px 10px 0px;
+}
+
+.title{
+  font-size:24px;
+  font-weight: 600;
+  writing-mode: vertical-lr;
+  text-align: left;
+  margin:0;
+  padding: 10px 10px;
+  letter-spacing: 8px;
+  line-height: 30px;
+}
+
+.verticalLine{
+  border-left:thin solid black;
+  height: 300px;
+  padding: 10px 0px 10px 0px;
+}
+
+.content{
+  flex:auto;
+  font-size:18px;
+  line-height: 1.2;
+  letter-spacing: 1px;
+  margin: 0;
+  padding: 10px 25px;
+}
+
+img{
+  width:330px;
+  height: auto;
+}
+
+p,
+li{
+  font-size:18px;
+  line-height: 1.2;
+  letter-spacing: 1px;
+  margin: 0;
+  padding: 0px 0;
+}
+
+@media(max-width:1024px){
+  /*螢幕寬度小於1024px,套用這組CSS*/
+  .section_desktop_1,
+  .section_desktop_2{
+  display:none;
+  }
+  
+  .section_mobile_1,
+  .section_mobile_2{
+  display:block;
+  }
+  
+
+  body{
+    width:auto;
+    margin:0 auto; 
+    background-color: #FFFFFF;
+    align-content: middle;
+  }
+  
+  h1{
+    font-size: 40px;  
+    text-align: right;
+    margin: 0;
+    padding: 10px 10px 0 0;
+    text-shadow: 3px 3px 1px #F5F5F5;
+  }
+  
+  .name{
+    font-size:16px;
+    text-align: right;
+    margin:0;
+    padding: 0 10px 10px 0;
+  }
+  
+  .section_mobile_1{
+    flex-wrap:wrap;
+    margin:0;
+    padding: 20px 0px 10px 10px;
+  }
+
+  .section_mobile_2{
+    flex-wrap:wrap;
+    margin:0;
+    padding: 20px 10px 10px 0px;
+  }
+
+  .mobile{
+    display:flex;
+    margin:0;
+    padding: 20px 0px 10px 0px;
+    justify-content: space-between;
+  }
+
+  .titleline{
+    display:flex;
+  }
+
+  .title{
+    font-size:24px;
+    font-weight: 600;
+    writing-mode: vertical-lr;
+    text-align: left;
+    margin:0;
+    padding: 10px 10px;
+    letter-spacing: 8px;
+    line-height: 30px;
+  }
+
+  .verticalLine{
+    border-left:thin solid black;
+    height: 300px;
+    padding: 10px 0px;
+  }
+  
+  .content{
+    width:auto;
+    font-size:18px;
+    line-height: 1.2;
+    letter-spacing: 1px;
+    margin: 0;
+    padding: 10px 10px 10px 20px;
+  }
+
+ img{
+    max-width:auto;
+    height: auto;
+  }
+    @media(max-width:480px){
+      /*螢幕寬度小於480px,套用這組CSS*/
+      img{
+        min-width 300px;
+        height: auto;
+        background-color: blue;
+      }
+      body{
+        width: 480px;
+        margin:0 auto; 
+        background-color: #FFFFFF;
+        align-content: middle;
+      }
+    }
+}
+
